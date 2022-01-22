@@ -4,6 +4,9 @@
 
 ----------------------------------------------------------------------------- */
 #myBtn {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
@@ -19,7 +22,8 @@
 }
 
 #myBtn:hover {
-  background-color: orange; 
+  background-color: black; 
+  color:#F28123
 }
 
 html {
