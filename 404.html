@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="google-site-verification" content="wwC2zGdH2mEDTXICwBoXtSkxQ9RI0vxQV4zEuxzFUeA" />
 
 	<!-- title -->
-	<title>404! - JoyfulMCO</title>
+	<title>JoyfulMCO</title>
 
 	<!-- favicon -->
 	<link rel="shortcut icon" type="image/png" href="assets/img/logo.png">
@@ -29,60 +31,203 @@
 	<link rel="stylesheet" href="assets/css/main.css">
 	<!-- responsive -->
 	<link rel="stylesheet" href="assets/css/responsive.css">
+	<!-- google analystics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-H5E2C3736Y"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'G-H5E2C3736Y');
+	</script>
 
 </head>
+
 <body>
-	
+
 	<!--PreLoader-->
-    <div class="loader">
-        <div class="loader-inner">
-            <div class="circle"></div>
+	<div class="loader">
+		<div class="loader-inner">
+			<div class="circle"></div>
+		</div>
+	</div>
+	<!--PreLoader Ends-->
+
+	<!-- backtotop button -->
+	<!-- <button onclick="toggledark()" id="myBtn" title="Toggle Dark Mode"><i class="fa fa-moon"></i> / <i class="fa fa-sun"></i></button> -->
+	<button onclick="topFunction()" id="backtotopBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+	<!-- end backtotop button -->
+
+	<!-- header -->
+	<div class="top-header-area" id="sticker">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 text-center">
+					<div class="main-menu-wrap">
+						<!-- logo -->
+						<div class="site-logo">
+							<a href="index.html">
+								<img src="assets/img/logo.png" alt="">
+							</a>
+						</div>
+						<!-- logo -->
+
+						<!-- menu start -->
+						<nav class="main-menu">
+							<ul>
+								<li class="current-list-item"><a href="#">Home</a>
+									<ul class="sub-menu">
+										<li><a href="index.html">Static Home</a></li>
+										<li><a href="index_2.html">Slider Home</a></li>
+									</ul>
+								</li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="papercrafting.html">Papercrafting</a></li>
+								<li><a href="hiking.html">Hiking</a></li>
+								<li><a href="cooking.html">Cooking</a></li>
+								<li><a href="painting.html">Painting</a></li>
+								<li><a href="programming.html">Programming</a></li>
+								<li><a href="gardening.html">Gardening</a></li>
+								<li><a href="#donate">Donate</a></li>
+								<button onclick="myFunction()" Toggle Dark Mode " class=" btn-toggle " style=" border-radius: 8px;
+									border: none; outline: 0; "><i class=" fa fa-moon "></i> / <i class=" fa fa-sun "></i></button>
+                                <li>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class=" mobile-menu "></div>
+                        <!-- menu end -->
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!--PreLoader Ends-->
-	
+    <!-- end header -->
 
-
-		<!-- error section -->
-		<div class="full-height-section error-section">
-			<div class="full-height-tablecell">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 offset-lg-2 text-center">
-							<div class="error-text">
-								<i class="fas fa-heart-broken"></i>
-								<h1>404, and heartbreaks.</h1>
-								<p>We've searched up and down, but still can't find what you want.</p>
-								<a href="index.html" class="boxed-btn">Back to Home</a>
-							</div>
-						</div>
+    <!-- MAIN big big text -->
+    <div class=" hero-area hero-bg ">
+        <div class=" container ">
+            <div class=" row ">
+                <div class=" col-lg-9 offset-lg-2 text-center ">
+                    <div class=" hero-text ">
+                        <div class=" hero-text-tablecell ">
+														<i class=" fas fa-heart-broken fa-4x"></i>
+									<h1>404, and heartbreaks</h1>
+									<p class="subtitle ">The page you requested does not exists.</p>
+									<div class="hero-btns ">
+										<a href="index.html" class="bordered-btn ">Back to Home</a>
+										<br></br>
+									</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- end error section -->
+	</div>
+	</div>
+	<!-- end big big text -->
+
+	<!-- footer -->
+	<div class="footer-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box about-widget">
+						<h2 class="widget-title">Who are we?</h2>
+						<p>Students from SMK Chung Ling, Malaysia. This website is our ASK project of using CSS and HTML to create a
+							website.</p>
+						<p>Check out our <a href="about.html">About page</a>.</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box get-in-touch">
+						<h2 class="widget-title">Target</h2>
+						<ul>
+							<p>Create a clean, yet simple website about healthy lifestyle during MCO (Movement Control Order).</p>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box pages">
+						<h2 class="widget-title">Pages</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="papercrafting.html">Papercrafting</a></li>
+							<li><a href="hiking.html">Hiking</a></li>
+							<li><a href="cooking.html">Cooking</a></li>
+							<li><a href="painting.html">Painting</a></li>
+							<li><a href="programming.html">Programming</a></li>
+							<li><a href="gardening.html">Gardening</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box get-in-touch">
+						<h2 class="widget-title" id="donate">Donate </h2>
+						<ul>
+							<p>If you found this page useful and you feel you are generous, consider donate to us!</p>
+							<a href="https://ko-fi.com/cycool29" target="_blank"><img
+									src="https://uploads-ssl.webflow.com/5c14e387dab576fe667689cf/61e11e22d8ff4a5b4a1b3346_Supportbutton-1.png"
+									alt="kofi" width="200" style="border-radius: 5%;"></a>
+							<p></p>
+							<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+								data-name="bmc-button" data-slug="cycool29" data-color="#FFDD00" data-emoji="" data-font="Cookie"
+								data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000"
+								data-coffee-color="#ffffff"></script>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end footer -->
+
+</body>
+
+<!-- jquery -->
+<script src="assets/js/jquery-1.11.3.min.js"></script>
+<!-- bootstrap -->
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- count down -->
+<script src="assets/js/jquery.countdown.js"></script>
+<!-- isotope -->
+<script src="assets/js/jquery.isotope-3.0.6.min.js"></script>
+<!-- waypoints -->
+<script src="assets/js/waypoints.js"></script>
+<!-- owl carousel -->
+<script src="assets/js/owl.carousel.min.js"></script>
+<!-- magnific popup -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<!-- mean menu -->
+<script src="assets/js/jquery.meanmenu.min.js"></script>
+<!-- sticker js -->
+<script src="assets/js/sticker.js"></script>
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+<!-- backtotop js -->
+<script src="assets/js/backtotop.js"></script>
+<!-- dark theme store js -->
+<script src="assets/js/dark-theme-store.js"></script>
 
 
-	<!-- jquery -->
-	<script src="assets/js/jquery-1.11.3.min.js"></script>
-	<!-- bootstrap -->
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-	<!-- count down -->
-	<script src="assets/js/jquery.countdown.js"></script>
-	<!-- isotope -->
-	<script src="assets/js/jquery.isotope-3.0.6.min.js"></script>
-	<!-- waypoints -->
-	<script src="assets/js/waypoints.js"></script>
-	<!-- owl carousel -->
-	<script src="assets/js/owl.carousel.min.js"></script>
-	<!-- magnific popup -->
-	<script src="assets/js/jquery.magnific-popup.min.js"></script>
-	<!-- mean menu -->
-	<script src="assets/js/jquery.meanmenu.min.js"></script>
-	<!-- sticker js -->
-	<script src="assets/js/sticker.js"></script>
-	<!-- main js -->
-	<script src="assets/js/main.js"></script>
-	
-	</body>
+
+<script>
+	function myFunction() {
+		document.body.classList.toggle("dark-theme");
+		// Let's say the theme is equal to light
+		let theme = "light";
+		// If the body contains the .dark-theme class...
+		if (document.body.classList.contains("dark-theme")) {
+			// ...then let's make the theme dark
+			theme = "dark";
+		};
+		// Then save the choice in localStorage
+		localStorage.setItem("theme", theme);
+	};
+</script>
+</body>
+
 </html>

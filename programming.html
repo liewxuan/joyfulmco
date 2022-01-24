@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- title -->
-	<title>Papercrafting - JoyfulMCO</title>
+	<title>Programming - JoyfulMCO</title>
 
 	<!-- favicon -->
 	<link rel="shortcut icon" type="image/png" href="assets/img/logo.png">
@@ -31,18 +32,21 @@
 	<link rel="stylesheet" href="assets/css/responsive.css">
 
 </head>
+
 <body>
-	
+
 	<!--PreLoader-->
-    <div class="loader">
-        <div class="loader-inner">
-            <div class="circle"></div>
-        </div>
-    </div>
-    <!--PreLoader Ends-->
-	
+	<div class="loader">
+		<div class="loader-inner">
+			<div class="circle"></div>
+		</div>
+	</div>
+	<!--PreLoader Ends-->
+
 	<!-- backtotop button -->
-	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+	<!-- <button onclick="toggledark()" id="myBtn" title="Toggle Dark Mode"><i class="fa fa-moon"></i> / <i class="fa fa-sun"></i></button> -->
+	<button onclick="topFunction()" id="backtotopBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+	<!-- end backtotop button -->
 
 	<!-- header -->
 	<div class="top-header-area" id="sticker">
@@ -53,7 +57,7 @@
 						<!-- logo -->
 						<div class="site-logo">
 							<a href="index.html">
-								<img src="assets/img/logo.png" alt="" width="100" height="70">
+								<img src="assets/img/logo.png" alt="">
 							</a>
 						</div>
 						<!-- logo -->
@@ -75,11 +79,14 @@
 								<li><a href="programming.html">Programming</a></li>
 								<li><a href="gardening.html">Gardening</a></li>
 								<li><a href="#donate">Donate</a></li>
+								<button onclick="myFunction()" title="Toggle Dark Mode" class="btn-toggle "
+									style="border-radius: 8px; border: none; outline: 0; "><i class="fa fa-moon "></i> / <i
+										class="fa fa-sun "></i></button>
 								<li>
 								</li>
 							</ul>
 						</nav>
-						<div class="mobile-menu"></div>
+						<div class="mobile-menu "></div>
 						<!-- menu end -->
 					</div>
 				</div>
@@ -87,125 +94,443 @@
 		</div>
 	</div>
 	<!-- end header -->
-	
+
 	<!-- breadcrumb-section -->
-	<div class="breadcrumb-section breadcrumb-bg">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 offset-lg-2 text-center">
-					<div class="breadcrumb-text">
+	<div class="breadcrumb-section breadcrumb-bg ">
+		<div class="container ">
+			<div class="row ">
+				<div class="col-lg-8 offset-lg-2 text-center ">
+					<div class="breadcrumb-text ">
 						<p>Healthy lifestyle during mco</p>
-						<h1>Papercrafting</h1>
+						<h1>Programming</h1>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- end breadcrumb section -->
-	
-	<!-- single article section -->
-	<div class="mt-150 mb-150">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8">
-					<div class="single-article-section">
-						<div class="single-article-text">
-							<img src="assets/img/papercrafting.png" alt="">
-							<p class="blog-meta">
-								<span class="author"><i class="fas fa-user"></i> Melvin Khoo</span>
+
+	<!-- article section -->
+	<div class="mt-150 mb-150 ">
+		<div class="container ">
+			<div class="row ">
+				<div class="col-lg-8 ">
+					<div class="single-article-section ">
+						<div class="single-article-text ">
+							<img src="assets/img/programming.png " alt=" ">
+							<p class="blog-meta ">
+								<span class="author "><i class="fas fa-user "></i> Pau Chen You</span>
 							</p>
-							<h2><u>What is papercraft?</u></h2>
-							<p>Papercraft is a collection of crafts using paper or card as the primary artistic medium for the creation of two or three-dimensional objects. Paper and card stock lend themselves to a wide range of techniques and can be folded, curved, bent, cut, glued, molded, stitched, or layered. Papermaking by hand is also a paper craft. </p>
+							<h2 id="what-is-programming">What is Programming?</h2>
+							<p><span>In this blog post, we will decipher the term “programming” and understand its usage and many
+									other related terms.</span></p>
+							<h2 id="understanding-programming-in-layman-terms"><strong>Understanding Programming in Layman
+									terms</strong></h2>
+							<blockquote>
+								<p><em><span>Programming is a way to “instruct the computer to perform various tasks”.</span></em></p>
+							</blockquote>
+							<p><span>Confusing? Let us understand the definition deeply.</span></p>
+							<p><strong>“Instruct the computer”</strong><span>: this basically means that you provide the computer a
+									set of instructions that are written in a language that the computer can understand. The instructions
+									could be of various types. For example:</span></p>
+							<ul>
+								<li><span>Adding 2 numbers,</span></li>
+								<li><span>Rounding off a number, etc.</span></li>
+							</ul>
+							<p><span>Just like we humans can understand a few languages (English, Spanish, Mandarin, French, etc.), so
+									is the case with computers. Computers understand instructions that are written in a specific
+									syntactical form called a programming language.</span></p>
+							<p><strong>“Perform various tasks”</strong><span>: the tasks could be simple ones like we discussed above
+									(adding 2 numbers, rounding off a number) or complex ones which may involve a sequence of multiple
+									instructions. For example:</span></p>
+							<ul>
+								<li><span>Calculating simple interest, given principal, rate and time.</span></li>
+								<li><span>Calculating the average return on a stock over the last 5 years.</span></li>
+							</ul>
+							<p><span>The above 2 tasks require complex calculations. They cannot usually be expressed in simple
+									instructions like adding 2 numbers, etc.</span></p>
+							<p><span>Hence, in summary, Programming is a way to tell computers to do a specific task.</span></p>
+							<h2 id="why-should-you-bother-about-coding"><strong>Why should you bother about coding?</strong></h2>
+							<p><span>You must be wondering - why does one need a computer for adding or rounding off numbers? Or even
+									for simple interest calculation? After all, even an 8th standard kid can easily do such things even
+									over large numbers. What is programming used for? What benefits do computers offer?</span></p>
+							<p>Well, computers offer so many benefits:</p>
+							<ul>
+								<li><strong>Computers are fast</strong><span><strong>:</strong> computers are amazingly fast. If you
+										know how to properly utilize the power of Computer programming, you can do wonders with it. For a
+										typical computer of today’s time, an addition of 2 numbers which could be as big as a billion each
+										takes hardly a nanosecond. Read again - nanosecond! That means that in 1 second, a computer can
+										perform about a billion additions. Can any human ever do that? Forget a billion additions a second,
+										typical human can’t even do 10 additions per second. So, computers offer great speed.</span></li>
+								<p></p>
+								<li><strong>Computers are cheap</strong><span><strong>:</strong> if you were a stock market analyst and
+										you had to monitor the data of say 1000 stocks so that you can quickly trade them. Imagine the
+										hassle that would create if you were to do it manually! It is just impractical. While you are
+										performing your calculation on the stock’s performance, the price may change. The other alternative
+										is to hire people so that you can monitor more stocks in parallel. That means your cost goes up
+										significantly. Not to mention the trouble you will face if some of your employees commit a
+										calculation error in the process. You may end up losing money! Contrast that with the case where you
+										use a computer. Computers can process a huge amount of information quickly and reliably. 1000 stocks
+										are nothing for computers in the 21st century.</span></li>
+								<p></p>
+								<li><strong>Computers can work 24x7</strong><span><strong>:</strong> Computers can work 24x7 without
+										getting exhausted. So, if you have a task that is big enough, you can without worries allocate it to
+										a computer by programming it and sleep peacefully.</span></li>
+							</ul>
+							<h2 id="why-should-you-learn-computer-programming"><strong>Why should you learn Computer
+									Programming?</strong></h2>
+							<p><span>Now, after knowing so many things about programming, the big question to be answered is - why
+									should you learn Computer Programming? Let us understand why:</span></p>
+							<ul>
+								<li><strong>Programming is fun</strong><span><strong>:</strong> Using Programming, you can create your
+										own games, your personal blog/profile page, a social networking site like Facebook, a search engine
+										like Google or an e-commerce platform like Amazon! Won’t that be fun? Imagine creating your own game
+										and putting it on Play Store and getting thousands and thousands of downloads!</span></li>
+								<li><strong>The backbone of a Technology Company</strong><span><strong>:</strong> The backbones of
+										today’s technology companies like Google, Facebook, Microsoft, Apple, Amazon, and many others, are
+										giant computer programs written by a collaboration of thousands of skilled programmers. If you have
+										the right business acumen, knowing programming can help you create the next big tech company.</span>
+								</li>
+								<li><strong>Pretty good salary</strong><span><strong>:</strong> Computer Programmers are paid extremely
+										well almost all across the world. Top programmers in Silicon Valley make millions of dollars every
+										year. Quite a few companies offer to start salaries as high as $100,000 per year.</span></li>
+							</ul>
 							<br></br>
-							<h2><u>Examples of papercraft</u></h2>
-							<h5>Paper Model</h5>
-							<p>Paper models, also called card models or papercraft, are models constructed mainly from sheets of heavy paper, paperboard, card stock, or foam.</p>
-							<img src="assets/img/paper model.jpg" alt="Paper Model">
+							<h2><u>Compiled and Interpreted Language</u></h2>
+							<p>There are two types of programming languages - Compiled Languages and Interpreted Languages.</p>
 							<p></p>
-							<h6>Tutorials</h6>
-							<p><a href="https://www.youtube.com/watch?v=S2Ypzn2GbSs">RIBA Learning: 3D Paper Model Techniques</a></p>
-							<p><a href="https://www.youtube.com/watch?v=AYcowfysifk">Paper Model Tutorial </a></p>
-							<p><a href="https://www.youtube.com/watch?v=h7JOy8zjT5Y">Easy Paper Home</a></p>
-							<br></br>
-							<h5>Origami</h5>
-							<p>Origami, from ori meaning "folding", and kami meaning "paper" is the art of paper folding, which is often associated with Japanese culture. In modern usage, the word "origami" is used as an inclusive term for all folding practices, regardless of their culture of origin</p>
-							<img src="assets/img/origami.jpg" alt="Origami">
+							<p>A <strong>compiled language</strong> is a programming language which are generally compiled and not
+								interpreted. It is one where the program, once compiled, is expressed in the instructions of the target
+								machine; this machine code is undecipherable by humans.</p>
+							<p>Examples of pure compiled languages are C, C++, Erlang, Haskell, Rust, and Go.</p>
 							<p></p>
-							<h6>Tutorials</h6>
-							<p><a href="https://www.youtube.com/watch?v=cZdO2e8K29o">How To Make an Easy Origami Butterfly (in 3 MINUTES!)</a></p>
-							<p><a href="https://www.youtube.com/watch?v=xRrLTwrZCBI">MAGIC BALL - Yakomoga EASY Origami tutorial </a></p>
-							<p><a href="https://www.youtube.com/watch?v=25qjLa9ZzBM">Origami Dragon - slow, step by step tutorial</a></p>
-							<br></br>
-							<h5>Quilling Art</h5>
-							<p>Quilling or paper filigree is an art form that involves the use of strips of paper that are rolled, shaped, and glued together to create decorative designs. The paper is rolled, looped, curled, twisted, and otherwise manipulated to create shapes that make up designs to decorate greetings cards, pictures, boxes, eggs, and to make models, jewelry, mobiles, etc. Quilling starts with rolling a strip of paper into a coil and then pinching the coil into shapes that can be glued together. There are advanced techniques and different sized paper that are used to create 3D miniatures, abstract art, flowers, and portraits among many things.</p>
-							<img src="assets/img/quilling art.jpg" alt="Quilling Art">
+							<p>An <strong>interpreted language</strong> is a programming language which are generally interpreted,
+								without compiling a
+								program into machine instructions. It is one where the instructions are not directly executed by the
+								target machine, but instead read and executed by some other program.</p>
 							<p></p>
-							<h6>Tutorials</h6>
-							<p><a href="https://www.youtube.com/watch?v=fCTtpImMwmg">35 Paper Quilling Shapes: Art & Craft Tutorials by HandiWorks</a></p>
-							<p><a href="https://www.youtube.com/watch?v=5ELP4C0tAJg">Art of Quilling!!.. 12 Paper Quilling Pattern | Design For Beginners  </a></p>
-							<p><a href="https://www.youtube.com/watch?v=W2BSnkXuxlI">Paper Quilling How To for Beginners</a></p>
-							<br></br>							<h5>Scrapbook</h5>
-							<p>Scrapbooking is the art of saving memories in hard copy. Scrapbookers are people that love their families and friends and treasure those relationships. Scrappers place photos into blank albums and embellish them with artwork and journaling, as a way of preserving precious memories.</p>
-							<img src="assets/img/scrapbook.jpg" alt="Quilling Art">
-							<p></p>
-							<h6>Tutorials</h6>
-							<p><a href="https://www.youtube.com/watch?v=ck_h_bgwbGU">How to Make a Scrapbook</a></p>
-							<p><a href="https://www.youtube.com/watch?v=vqZBdTEjelc">How to Make Birthday Pop Up Scrapbook </a></p>
-							<p><a href="https://www.youtube.com/watch?v=RHoUcysjE7A">Scrapbook Tutorial/How to make Scrapbook/DIY Scrapbook Tutorial/Birthday Scrapbook Ideas/</a></p>
-							<br></br>							
-							<p>Paper is one of the most versatile tools in crafting. You can stamp images on it, draw on it, watercolor it, cut it into shapes, or use it as a design element. The possibilities are truly endless! Grab your favorite paper sets, some adhesives, a few stamps and dies, and try these fun DIY papercrafting ideas now!</p>
+							<p>Interpreted language ranges –
+								JavaScript, Perl, Python, BASIC, etc.</p>
+							<h2 id="advantages-of-compiled-languages">Advantages of compiled languages</h3>
+								<p>Programs that are compiled into native machine code tend to be faster than interpreted code. This is
+									because the process of translating code at run time adds to the overhead, and can cause the program to
+									be slower overall.</p>
+								<h2 id="disadvantages-of-compiled-languages">Disadvantages of compiled languages</h3>
+									<p>The most notable disadvantages are:</p>
+									<ul>
+										<li>Additional time needed to complete the entire compilation step before testing</li>
+										<li>Platform dependence of the generated binary code</li>
+									</ul>
+									<h2 id="advantages-of-interpreted-languages">Advantages of interpreted languages</h3>
+										<p>Interpreted languages tend to be more flexible, and often offer features like dynamic typing and
+											smaller program size. Also, because interpreters execute the source program code themselves, the
+											code
+											itself is platform independent.</p>
+										<h2 id="disadvantages-of-interpreted-languages">Disadvantages of interpreted languages</h3>
+											<p>The most notable disadvantage is typical execution speed compared to compiled languages.</p>
+											<p></p>
+											<p>Actually, most programming languages can have both compiled and interpreted implementations –
+												the
+												language itself is not necessarily compiled or interpreted. However, for simplicity’s sake,
+												they’re typically referred to as such.
+
+												Python, for example, can be executed as either a compiled program or as an interpreted language
+												in interactive mode. On the other hand, most command line tools, CLIs, and shells can
+												theoretically be classified as interpreted languages.</p>
+											<p></p>
+											<h3>Top Programming Languages</h3>
+											<p>This is a list of the popular programming languages at December 2021.</p>
+											<p><strong>TIOBE Index</strong>: TIOBE ratings are calculated by counting hits of the most popular
+												search engines. Twenty-five search engines are used to calculate the TIOBE index. The TIOBE
+												Programming Community index is an indicator of the popularity of programming languages. The
+												index started in the year 2001 and updated once a month.</p>
+											<p><strong>PYPL Index</strong>: The PYPL PopularitY of Programming Language Index is created by
+												analyzing how often language tutorials are searched on Google. The index is updated once a
+												month.</p>
+											<img src="assets/img/top-programming-language.png">
+											<p></p>
+											<img src="assets/img/top-programming-language-2.jpg">
+											<p>If you're excited by the data and logic side of coding, you may wish to learn Python, Java, C,
+												C++ or C#. If you're jazzed about visual design and user interfaces, TypeScript might be up your
+												alley. And if you're looking to develop mobile apps, you'd want to check out Java for Android,
+												and Swift or Objective-C for Apple's iOS.
+
+											</p>
+											<br></br>
+											<h3>Best Programming IDE</h3>
+											<h2>1. Microsoft Visual Studio</h2>
+											<p>Microsoft Visual Studio is a premium IDE ranging in price from $699 - $2,900 depending on the
+												edition and licensing. The many editions of this IDE are capable of creating all types of
+												programs ranging from web applications to mobile apps to video games. This series of software
+												includes tons of tools for compatibility testing so that you can see how your apps run on more
+												than 300 devices and browsers. Thanks to its flexibility, Visual Studio is a great tool for both
+												students and professionals.</p>
+
+											<p>Languages supported: ASP.NET, DHTML, JavaScript, JScript, Visual Basic, Visual C#, Visual C++,
+												Visual F#, XAML and more.</p>
+
+											<p>Notable features:</p>
+
+											<li>A massive library of extensions that is always growing</li>
+											<li>IntelliSense</li>
+											<li>Customizable dashboard and dockable windows</li>
+											<li>Straightforward workflow and file hierarchy</li>
+											<li>Insights for monitoring performance in real time</li>
+											<li>Automation tools</li>
+											<li>Easy refactoring and code snippet insertion</li>
+											<li>Split screen support</li>
+											<li>Error list that allows debugging while building</li>
+											<li>Approval checks when deploying apps via ClickOnce, Windows Installer or Publish Wizard</li>
+											<p></p>
+											<h2>2. NetBeans</h2>
+											<p>Netbeans is a free and open source IDE. Ideal for editing existing projects or starting from
+											scratch, NetBeans boasts a simple drag-and-drop interface that comes with a myriad of convenient
+											project templates. It is primarily used to develop Java applications, but you can download bundles
+											that support other languages.</p>
+
+											<p>Languages supported: C, C++, C++11, Fortan, HTML 5, Java, PHP and more,</p>
+
+											<p>Notable features:</p>
+
+											<li>Intuitive drag-and-drop interface</li>
+											<li>Dynamic and static libraries</li>
+											<li>Multi-session GNU debugger integration with code assistance</li>
+											<li>Allows for remote development</li>
+											<li>Compatible with Windows, Linux, OS X, and Solaris platforms</li>
+											<li>Supports Qt Toolkit</li>
+											<li>Supports Fortan and Assembler files</li>
+											<li>Supports a number of compilers including CLang/LLVM, Cygwin, GNU, MinGW and Oracle Solaris Studio</li>
+											<p></p>
+											<h2>3. PyCharm</h2>
+											<p>PyCharm is developed by the folks over at JetBrains and provides users a free Community Edition,
+											30 day free trial for the Professional Edition, $213 - $690 for an annual subscription.
+											Comprehensive code assistance and analysis make PyCharm the best IDE for Python programmers of all
+											ability levels. PyCharm also supports other languages and works on multiple platforms, so
+											practically anyone can use it.</p>
+
+											<p>Languages supported: AngularJS, Coffee Script, CSS, Cython, HTML, JavaScript, Node.js, Python,
+											TypeScript and template languages.</p>
+
+											<p>Notable features:</p>
+
+											<li>Compatible with Windows, Linux, and Mac OS</li>
+											<li>Comes with Django IDE</li>
+											<li>Easy to integrate with Git, Mercurial and SVN</li>
+											<li>Customizable interface with VIM emulation</li>
+											<li>JavaScript, Python and Django debuggers</li>
+											<li>Supports Google App Engine</li>
+											<p></p>
+											<h2>4. IntelliJ IDEA</h2>
+											<p>IntelliJ IDEA is another IDE developed by Jet Brains. This IDE offers users a free Community
+											Edition, 30 day free trial for the Ultimate Edition, and costs $533 - $693 annually depending on
+											features. IntelliJ IDEA, which supports Java 8 and Java EE 7, comes with extensive tools to
+											develop mobile apps and enterprise technologies for different platforms. When it comes to cost,
+											IntelliJ is a real deal due to the massive of list of features you get.</p>
+
+											<p>Languages supported: AngularJS, CoffeeScript, CS, HTML, JavaScript, Less, Node JS, PHP, Python,
+											Ruby, Sass, TypeScript and more.</p>
+
+											<p>Notable features:</p>
+
+											<li>Extensive database editor and UML designer</li>
+											<li>Supports multiple build systems</li>
+											<li>Test runner UI</li>
+											<li>Code coverage</li>
+											<li>Git integration</li>
+											<li>Supports Google App Engine, Grails, GWT, Hibernate, Java EE, OSGi, Play, Spring, Struts and more</li>
+											<li>Deployment and debugging tools for most application servers</li>
+											<li>Intelligent text editors for HTML, CSS, and Java</li>
+											<li>Integrated version control</li>
+											<li>AIR Mobile supports Android and iOS devices</li>
+											<p></p>
+											<h2>5. Eclipse</h2>
+											<p>Eclipse is a free and flexible open source editor useful for beginners and pros alike. Originally
+											a Java environment, Eclipse now has a wide range of capabilities thanks to a large number of
+											plugins and extensions. In addition to debugging tools and Git/CVS support, the standard edition
+											of Eclipse comes with Java and Plugin Development Tooling. If that's not enough for you, there is
+											plenty of other packages to choose from that include tools for charting, modeling, reporting,
+											testing and building GUIs. The Eclipse Marketplace Client gives users access to a treasure trove
+											of plugins and information supplied by an expanding community of developers.</p>
+
+											<p>Languages supported: C, C++, Java, Perl, PHP, Python, Ruby and more</p>
+
+											<p>Notable features:</p>
+
+											<li>A plethora of package solutions allowing for multi-language support</li>
+											<li>Java IDE enhancements such as hierarchical views of nested projects with customizable perspectives</li>
+											<li>Task-focused interface including system-tray notifications</li>
+											<li>Automated error reporting</li>
+											<li>Tooling options for JEE projects</li>
+											<li>JUnit integration</li>
+											
+											<p></p>
+											<h2>6. Code::Blocks</h2>
+											<p>Code::Blocks is another popular free and open source option. It is a highly customizable IDE that
+											performs consistently across all platforms, so it is great for developers who frequently switch
+											between workspaces. The plug-in framework lets users tweak this IDE to meet their needs.</p>
+
+											<p>Languages supported: C, C++, Fortran.</p>
+
+											<p>Notable features:</p>
+
+											<li>Easy-to-navigate tabbed interface including a list of open files</li>
+											<li>Compatible with Linux, Mac, and Windows</li>
+											<li>Written in C++</li>
+											<li>Requires no interpreted or proprietary languages</li>
+											<li>Supports many pre-built and custom-built plugins</li>
+											<li>Supports multiple compilers including GCC, MSVC++, clang and more</li>
+											<li>Debugger that includes breakpoint support</li>
+											<li>Text editor with syntax highlighting and autocomplete</li>
+											<li>Customizable external tools</li>
+											<li>Simple task management tools ideal for multiple users</li>
+											<p></p>
+											<h2>7. Aptana Studio 3</h2>
+											<p>Perhaps the most powerful of the open source IDEs, Aptana Studio 3 is a massive improvement over
+											its predecessors. Since Aptana Studio 3 supports most browser specs, compatibility challenges are
+											minimal, so users can quickly develop, test and deploy web apps from this single IDE.</p>
+
+											<p>Languages supported: HTML5, CSS3, JavaScript, Ruby, Rails, PHP, and Python.</p>
+
+											<p>Notable features:</p>
+
+											<li>Code assist for CSS, HTML, JavaScript, PHP and Ruby</li>
+											<li>Deployment wizard with simple setup and multiple protocols including Capistrano, FTP, FTPS and SFTP</li>
+											<li>Automatically sends Ruby and Rails applications to hosting services</li>
+											<li>Integrated debuggers for Ruby and Rails and JavaScript</li>
+											<li>Git integration</li>
+											<li>Easily accessible command line terminal with hundreds of commands</li>
+											<li>String custom commands to extend capabilities</li>
+											<p></p>
+											<h2>8. Komodo</h2>
+											<p>Komodo offers a free 21-day trial and costs between $99 - $1615 depending on the edition and
+											licensing. Practically any programmer can use Komodo because it supports most major programming
+											languages. The streamlined interface allows for advanced editing, and small perks like the Syntax
+											Checker and single-step debugging make Komodo one of the most popular IDEs for web and mobile
+											development.</p>
+
+											<p>Languages supported: CSS, Go, JavaScript, HTML, NodeJS, PerlPHP, Python, Ruby, Tcl and more.</p>
+
+											<p>Notable features:</p>
+
+											<li>Customizable UI including split view and multi-window editing</li>
+											<li>Version control integration for Bazaar, CVS, Git, Mercurial, Perforce and Subversion</li>
+											<li>Python and PHP code profiling</li>
+											<li>Convenient code collaboration for multi-user editing</li>
+											<li>Deploy to the cloud thanks to Stackato PaaS</li>
+											<li>Graphical debugging for NodeJS, Perl, PHP, Python, Ruby and Tcl</li>
+											<li>Autocomplete and refactoring</li>
+											<li>Consistent performance across Mac, Linux and Windows platforms</li>
+											<li>Many add-ons allow a high level of customization</li>
+											<p></p>
+											<h2>9. RubyMine</h2>
+											<p>RubyMine is another premium IDE, developed by Jet Brains, that offers a 30 day free trial and
+											costs $210 - 687 annually. As its name implies, RubyMine is a favorite among Ruby enthusiasts;
+											however, this IDE supports other programming languages as well. Easy navigation, logical workflow
+											organization, and compatibility with most platforms make RubyMine a workplace favorite.</p>
+
+											<p>Languages supported: CoffeeScript, CSS, HAML, HTML, JavaScript, Less, Ruby and Rails, Ruby and
+											SASS.</p>
+
+											<p>Notable features:</p>
+
+											<li>Code snippets, autocomplete and automatic refactoring</li>
+											<li>Project tree allows for quick code analysis</li>
+											<li>Rails Models Diagram</li>
+											<li>Rails Project View</li>
+											<li>RubyMotion allows for iOS development</li>
+											<li>Stack support includes Bundler, pik, rbenv, RVM and more</li>
+											<li>JavaScript, CoffeeScript and Ruby debuggers</li>
+											<li>Integration with CVS, Git, Mercurial, Perforce and Subversion</li>
+											<li>Bundled keyboard schemes</li>
+											<p></p>
+											<h2>10. Xcode</h2>
+											<p>Xcode IDE is free, open source, and part of Xcode, which is a collection of tools for making apps
+											for Apple devices such as the iPad, iPhone and Mac. Integration with Cocoa Touch makes development
+											in the Apple environment a breeze, and you can enable services such as Game Center or Passbook
+											with a single mouse click. Built-in communication with the developer's website helps users produce
+											fully functioning apps on the fly.</p>
+
+											<p>Languages supported: AppleScript, C, C++, Java, Objective-C.</p>
+
+											<p>Notable features:</p>
+
+											<li>UI controls can be easily connected with implementation code</li>
+											<li>Apple LLVM compiler scans code offers advice for addressing performance issues</li>
+											<li>Assistant function allows for split-code workspace</li>
+											<li>Jump bar permits quick navigation</li>
+											<li>Interface Builder lets user build prototypes without writing any code</li>
+											<li>UI and source code can be graphically connected to sketch complex interface prototypes in just minutes</li>
+											<li>Version Editor includes log files and commit timeline</li>
+											<li>Branch and merge for distributed teams</li>
+											<li>Test Navigator lets you quickly test applications at any point during development</li>
+											<li>Automatically builds, analyzes, tests, and archives projects thanks to Integration with OX X server</li>
+											<li>Workflow is highly customizable with Tabs, Behaviors, and Snippets</li>
+											<li>Instrument library and asset catalog</li>
+											<br></br>
+											<h2><u>Finding the best IDE for your needs</u></h2>
+											<p>As you can see, the best IDE for you depends on your operating system, your programming language
+											of choice and which platforms you wish to develop for. Finding the right fit is really an ongoing
+											process. Your options are practically limitless, so it may be helpful to make a list of your
+											preferences and then searching for the IDE that most closely matches your needs. While every
+											developer has their favorite software, don't be afraid to branch out as the world of IDEs is
+											always expanding.</p>
 						</div>
-						<br></br>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- end single article section -->
+	</div>
+	<!-- end article section -->
 
-	
+
 	<!-- footer -->
-	<div class="footer-area">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-6">
-					<div class="footer-box about-widget">
-						<h2 class="widget-title">Who are we?</h2>
-						<p>Students from SMK Chung Ling, Malaysia. This website is our ASK project of using CSS and HTML to create a website.</p>
-						<p>For more info, checkout our <a href="about.html">About page</a>.</p>
+	<div class="footer-area ">
+		<div class="container ">
+			<div class="row ">
+				<div class="col-lg-3 col-md-6 ">
+					<div class="footer-box about-widget ">
+						<h2 class="widget-title ">Who are we?</h2>
+						<p>Students from SMK Chung Ling, Malaysia. This website is our ASK project of using CSS and HTML to create a
+							website.</p>
+						<p>Check out our <a href="about.html ">About page</a>.</p>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="footer-box get-in-touch">
-						<h2 class="widget-title">Target</h2>
+				<div class="col-lg-3 col-md-6 ">
+					<div class="footer-box get-in-touch ">
+						<h2 class="widget-title ">Target</h2>
 						<ul>
 							<p>Create a clean, yet simple website about healthy lifestyle during MCO (Movement Control Order).</p>
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="footer-box pages">
-						<h2 class="widget-title">Pages</h2>
+				<div class="col-lg-3 col-md-6 ">
+					<div class="footer-box pages ">
+						<h2 class="widget-title ">Pages</h2>
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="papercrafting.html">Papercrafting</a></li>
-							<li><a href="hiking.html">Hiking</a></li>
-							<li><a href="cooking.html">Cooking</a></li>
-							<li><a href="painting.html">Painting</a></li>
-							<li><a href="programming.html">Programming</a></li>
-							<li><a href="gardening.html">Gardening</a></li>
+							<li><a href="index.html ">Home</a></li>
+							<li><a href="about.html ">About</a></li>
+							<li><a href="papercrafting.html ">Papercrafting</a></li>
+							<li><a href="hiking.html ">Hiking</a></li>
+							<li><a href="cooking.html ">Cooking</a></li>
+							<li><a href="painting.html ">Painting</a></li>
+							<li><a href="programming.html ">Programming</a></li>
+							<li><a href="gardening.html ">Gardening</a></li>
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="footer-box get-in-touch">
-						<h2 class="widget-title" id="donate">Donate </h2>
+				<div class="col-lg-3 col-md-6 ">
+					<div class="footer-box get-in-touch ">
+						<h2 class="widget-title " id="donate ">Donate </h2>
 						<ul>
 							<p>If you found this page useful and you feel you are generous, consider donate to us!</p>
-							<a href="https://ko-fi.com/cycool29" target="_blank"><img src="https://uploads-ssl.webflow.com/5c14e387dab576fe667689cf/61e11e22d8ff4a5b4a1b3346_Supportbutton-1.png" alt="kofi"></a>
+							<a href="https://ko-fi.com/cycool29 " target="_blank "><img
+									src="https://uploads-ssl.webflow.com/5c14e387dab576fe667689cf/61e11e22d8ff4a5b4a1b3346_Supportbutton-1.png "
+									alt="kofi " width="200 " style="border-radius: 30px; "></a>
 							<p></p>
-							<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="cycool29" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+							<a href="https://buymeacoffee.com/cycool29" target="_blank"><img
+									src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="buymeacoffee" width="200"
+									style="border-radius: 30px; "></a>
 						</ul>
 					</div>
 				</div>
@@ -213,30 +538,50 @@
 		</div>
 	</div>
 	<!-- end footer -->
-	
-
-	<!-- jquery -->
-	<script src="assets/js/jquery-1.11.3.min.js"></script>
-	<!-- bootstrap -->
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-	<!-- count down -->
-	<script src="assets/js/jquery.countdown.js"></script>
-	<!-- isotope -->
-	<script src="assets/js/jquery.isotope-3.0.6.min.js"></script>
-	<!-- waypoints -->
-	<script src="assets/js/waypoints.js"></script>
-	<!-- owl carousel -->
-	<script src="assets/js/owl.carousel.min.js"></script>
-	<!-- magnific popup -->
-	<script src="assets/js/jquery.magnific-popup.min.js"></script>
-	<!-- mean menu -->
-	<script src="assets/js/jquery.meanmenu.min.js"></script>
-	<!-- sticker js -->
-	<script src="assets/js/sticker.js"></script>
-	<!-- main js -->
-	<script src="assets/js/main.js"></script>
-	<!-- backtotop js -->
-	<script src="assets/js/backtotop.js"></script>
 
 </body>
+
+<!-- jquery -->
+<script src="assets/js/jquery-1.11.3.min.js "></script>
+<!-- bootstrap -->
+<script src="assets/bootstrap/js/bootstrap.min.js "></script>
+<!-- count down -->
+<script src="assets/js/jquery.countdown.js "></script>
+<!-- isotope -->
+<script src="assets/js/jquery.isotope-3.0.6.min.js "></script>
+<!-- waypoints -->
+<script src="assets/js/waypoints.js "></script>
+<!-- owl carousel -->
+<script src="assets/js/owl.carousel.min.js "></script>
+<!-- magnific popup -->
+<script src="assets/js/jquery.magnific-popup.min.js "></script>
+<!-- mean menu -->
+<script src="assets/js/jquery.meanmenu.min.js "></script>
+<!-- sticker js -->
+<script src="assets/js/sticker.js "></script>
+<!-- main js -->
+<script src="assets/js/main.js "></script>
+<!-- backtotop js -->
+<script src="assets/js/backtotop.js "></script>
+<!-- dark theme store js -->
+<script src="assets/js/dark-theme-store.js "></script>
+
+
+
+<script>
+	function myFunction() {
+		document.body.classList.toggle("dark-theme");
+		// Let's say the theme is equal to light
+		let theme = "light";
+		// If the body contains the .dark-theme class...
+		if (document.body.classList.contains("dark-theme")) {
+			// ...then let's make the theme dark
+			theme = "dark";
+		};
+		// Then save the choice in localStorage
+		localStorage.setItem("theme", theme);
+	};
+</script>
+</body>
+
 </html>
