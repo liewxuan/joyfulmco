@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Healthy Lifestyle">
 
     <!-- title -->
-    <title>Painting - JoyfulMCO</title>
+    <title>JoyfulMCO</title>
 
     <!-- favicon -->
     <link rel="shortcut icon" type="image/png" href="assets/img/logo.png">
@@ -73,7 +74,7 @@
                                 <li><a href="programming.html">Programming</a></li>
                                 <li><a href="gardening.html">Gardening</a></li>
                                 <li><a href="#donate">Donate</a></li>
-                                <button onclick="myFunction()" title="Toggle Dark Mode" class="btn-toggle "
+                                <button onclick="toggledark()" title="Toggle Dark Mode" class="btn-toggle "
                                     style="border-radius: 8px; border: none; outline: 0; "><i class="fa fa-moon "></i> /
                                     <i class="fa fa-sun "></i></button>
                                 <li>
@@ -401,7 +402,7 @@
 
 
 <script>
-    function myFunction() {
+    function toggledark() {
         document.body.classList.toggle("dark-theme");
         // Let's say the theme is equal to light
         let theme = "light";
