@@ -2873,6 +2873,25 @@ table.order-details tbody td {
     border-radius: 5px;
 }
 
+#toggledarkBtn {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    border: none;
+    outline: none;
+    background-color: #F28123;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 8px 20px;
+}
+
+#toggledarkBtn:hover {
+    background-color: #66757D;
+    color: #F28123
+}
+
 
 /* -----------------------------------------------------------------------------
 
