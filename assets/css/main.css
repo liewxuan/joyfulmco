@@ -1814,6 +1814,10 @@ p.excerpt {
     color: #66757D;
 }
 
+.single-article-text img {
+    border-radius: 8px;
+}
+
 .comments-list-wrap {
     margin: 100px 0;
 }
